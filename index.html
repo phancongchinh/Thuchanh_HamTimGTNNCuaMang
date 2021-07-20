@@ -15,9 +15,9 @@
         do {
             inputArray[i] = parseInt(prompt(`Add element array[${i}]`));
             // To check if an element is valid or not !
-            // while (isNaN(inputArray[i])) {
-            //     inputArray[i] = parseInt(prompt(`The element array[${i}] is not valid. Enter again!`))
-            // }
+            while (isNaN(inputArray[i])) {
+                inputArray[i] = parseInt(prompt(`The element array[${i}] is not valid. Enter again!`))
+            }
             i++;
         } while (confirm("Add more element?"))
     }
